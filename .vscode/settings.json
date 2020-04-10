@@ -1,0 +1,20 @@
+{
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "better-comments.highlightPlainText": true,
+    "showGitMetrics": true,
+    "color-highlight.markerType": "outline",
+    "color-highlight.matchWords": true,
+    "prettier.semi": false,
+    "prettier.useTabs": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.format.semicolons": "remove",
+    "javascript.suggest.completeFunctionCalls": true
+}
