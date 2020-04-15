@@ -24,3 +24,10 @@ yarn-error.log*
 
 #env files
 */env
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
