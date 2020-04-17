@@ -46,7 +46,7 @@ export const fetchStreams = () => async dispatch => {
 
 /* AC for fetching a single stream by ID */
 export const fetchStream = id => async dispatch => {
-  const response = await streams.get(`/stream/${id}`);
+  const response = await streams.get(`/streams/${id}`);
   dispatch({
     type: FETCH_STREAM,
     payload: response.data,
@@ -55,12 +55,15 @@ export const fetchStream = id => async dispatch => {
 
 /* AC for editing a stream */
 export const editStream = (id, updatedValues) => async dispatch => {
-  const response = await streams.put(`/streams/${id}`, updatedValues);
+  const response = await streams.patch(`/streams/${id}`, updatedValues);
 
   dispatch({
     type: EDIT_STREAM,
     payload: response.data,
   });
+
+  //Sending the user back to home page once a stream is edited
+  history.push('/');
 };
 
 /*AC for deleting a stream */
