@@ -2,7 +2,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+To get this project started you need to run 3 commands in different directories.
+
+1. In /api run _npm start_
+2. In /rtmpserver run _npm start_
+3. In /client run _npm start_
+
+To stream videos, use any 3rd party streaming client preferably OBS Studio.
+^ Enter the stream URL as http://localhost:8000/live/stream/:id
+Here :id represents id of the stream.
+^ Start streaming from OBS and open the stream in client to view the stream.
 
 ### `npm start`
 
