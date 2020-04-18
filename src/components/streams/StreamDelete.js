@@ -30,7 +30,6 @@ class StreamDelete extends Component {
 	}
 	componentDidMount() {
 		this.props.fetchStream(this.props.match.params.id)
-		console.log(this.props.stream.title)
 	}
 
 	render() {
