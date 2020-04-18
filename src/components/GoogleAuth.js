@@ -13,7 +13,7 @@ class GoogleAuth extends Component {
 			window.gapi.client
 				.init({
 					clientId: GAPI_KEY,
-					scope: SCOPE_EMAIL,
+					scope: SCOPE_EMAIL
 				})
 				.then(() => {
 					// then() is called when the connection to gapi library is established with our client  id and scope
@@ -32,7 +32,7 @@ class GoogleAuth extends Component {
 	/**
 	 * * This function listens to change in authentication status and updates the component state value accordingly
 	 */
-	onAuthChange = (isSignedIn) => {
+	onAuthChange = isSignedIn => {
 		if (isSignedIn) {
 			// Triggering the sign in action creator
 			/**
@@ -50,14 +50,18 @@ class GoogleAuth extends Component {
 		else if (this.props.isSignedIn)
 			// User is signed in, showing sign out button
 			return (
-				<button className="ui red google button" onClick={this.onSignOutClick}>
+				<button
+					className="ui red google button"
+					onClick={this.onSignOutClick}>
 					<i className="google icon" />
 					Sign out
 				</button>
 			)
 		// User is not signed in, showing sign in button
 		return (
-			<button className="ui green google button" onClick={this.onSignInClick}>
+			<button
+				className="ui green google button"
+				onClick={this.onSignInClick}>
 				<i className="google icon" />
 				Sign in with Google
 			</button>
@@ -85,9 +89,9 @@ class GoogleAuth extends Component {
 	}
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
 	return {
-		isSignedIn: state.auth.isSignedIn,
+		isSignedIn: state.auth.isSignedIn
 	}
 }
 /**
